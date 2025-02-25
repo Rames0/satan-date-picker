@@ -1,0 +1,26 @@
+{
+  "name": "satan-date-picker",
+  "version": "2.0.2",
+  "main": "index.js",
+  "scripts": {
+    "build": ""
+  },
+  "keywords": [
+    "NepaliDatePicker"
+  ],
+  "author": "Satan",
+  "license": "ISC",
+  "description": "A Nepali date picker component for React",
+  "dependencies": {
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  },
+  "devDependencies": {
+    "@babel/preset-env": "^7.26.9",
+    "@babel/preset-react": "^7.26.3",
+    "rollup": "^4.34.8",
+    "rollup-plugin-babel": "^4.4.0",
+    "rollup-plugin-commonjs": "^10.1.0",
+    "rollup-plugin-node-resolve": "^5.2.0"
+  }
+}
