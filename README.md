@@ -4,12 +4,24 @@
 
 const datePickerRef = useRef(null);
     const handleDateSelect = (dateInfo) => {
+
         // dateInfo contains:
+
         // - bsYear, bsMonth, bsDate (Bikram Sambat date)
+
         // - formattedDate (formatted based on dateFormat and language)
+
         // - bsDate (YYYY-MM-DD in selected language numbers)
+
         // - adDate (YYYY-MM-DD in English numbers)
     };
+
+    %D = WeekDays
+    %M = Months
+    %d = Date
+    %y = Year
+    %m = Num Months
+    
 
     {/* For Nepali Calendar */}
     <StnNepaliDatePicker
