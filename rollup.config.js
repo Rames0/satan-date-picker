@@ -1,16 +1,14 @@
 import babel from "@rollup/plugin-babel";
 import resolve from "@rollup/plugin-node-resolve";
 import commonjs from "@rollup/plugin-commonjs";
-import postcss from "rollup-plugin-postcss";
-import { terser } from "rollup-plugin-terser";
 
 export default {
-  input: "src/StnNepaliDatePicker.jsx",
+  input: "src/StnNepaliDatePicker.jsx", // Ensure this matches your actual component
   output: [
     {
       file: "dist/index.cjs.js",
       format: "cjs",
-      exports: "named",
+      exports: "default",
     },
     {
       file: "dist/index.esm.js",
@@ -20,16 +18,7 @@ export default {
   plugins: [
     resolve(),
     commonjs(),
-    postcss({
-      extract: true,
-      minimize: true,
-    }),
-    babel({
-      babelHelpers: "bundled",
-      presets: ["@babel/preset-react"],
-      exclude: "node_modules/**",
-    }),
-    terser(),
+    babel({ babelHelpers: "bundled", presets: ["@babel/preset-react"] }),
   ],
-  external: ["react", "react-dom"],
+  external: ["react", "react-dom", "react-icons"], // Add react-icons here
 };
