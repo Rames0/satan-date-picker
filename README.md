@@ -1,6 +1,15 @@
-![alt text](image.png)
-![alt text](image-1.png)
+# satan-date-picker
 
+A Nepali date picker component for React based on Bikram Sambat (Nepali calendar).
+
+![satan-date-picker](https://github.com/Rames0/satan-date-picker/blob/main/image.png)
+![satan-date-picker](https://github.com/Rames0/satan-date-picker/blob/main/image-1.png)
+
+## 🚀 Features
+- 🎉 **Support for Nepali (Bikram Sambat) and English (Gregorian) calendars**
+- 📅 **Flexible date format customization**
+- ⚡ **Lightweight & easy to use**
+- 🌍 **Language support: Nepali and English**
 
 const datePickerRef = useRef(null);
     const handleDateSelect = (dateInfo) => {
@@ -39,5 +48,10 @@ const datePickerRef = useRef(null);
     />
 
     !!Important Note : For Now Install React-Icons To Use 
-        
-# satan-date-picker
+
+## 📦 Installation
+
+To install `satan-date-picker`, use npm:
+
+```sh
+npm install satan-date-picker
